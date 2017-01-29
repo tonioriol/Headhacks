@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ca">
+<head id="Head" runat="server">
+    <title>headhacks</title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Estils.css" rel="stylesheet" type="text/css" />
+    
+    <link runat="server" rel="shortcut icon" href="~/Imatges/Web/favicon.ico" type="image/x-icon" />
+    <link runat="server" rel="icon" href="~/Imatges/Web/favicon.ico" type="image/ico" />
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form" runat="server">
+    <div class="page">
+        <div class="header">
+            <a href="/" title="Inici">
+                <div class="title">
+                    <h1>
+                        headhacks
+                    </h1>
+                </div>
+            </a>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Accedir</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>                        
+                        Benvingut <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>! <asp:HyperLink ID="lnkPerfilPropi" NavigateUrl="~/Usuari.aspx?nom=usuariPropi" runat="server">Mostra el meu perfil</asp:HyperLink>
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Sortir" LogoutPageUrl="~/" /> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink">
+                <div id="quadre_cerca">
+                    <asp:TextBox ID="txtCerca" runat="server"></asp:TextBox>
+                    <asp:Button ID="btnCerca" runat="server" Text="Cercar" 
+                        onclick="btnCerca_Click" />
+                </div>
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Inici"/>
+                        <asp:MenuItem Text="Pelicules" Value="Pelicules" NavigateUrl="~/Pelicules.aspx">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Generes.aspx" Text="Gèneres" Value="Gèneres">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/AfegirPelicula.aspx" Text="Afegir Pelicula" 
+                            Value="Afegir Pelicula"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Quant a"/>
+                    </Items>
+                </asp:Menu>                
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        Desenvolupat per Javier Marín i Toni Oriol. 2010
+    </div>
+    </form>
+</body>
+</html>

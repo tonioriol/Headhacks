@@ -1,0 +1,534 @@
+﻿/* Generals
+-------------------------------------------------------------------*/
+
+body {
+}
+
+img
+{
+    border:1px solid #CCCCCC;
+    padding:1px;
+}
+
+/* Capçalera
+------------------------------------------------------------------*/
+
+#quadre_cerca
+{
+    float: right;
+    width: 220px;
+    padding: 6px;
+}
+
+/* Inici
+-----------------------------------------------------------------*/
+
+#inici
+{
+    background: #EDECEE;
+    margin: 20px;
+    padding:20px;
+    font-size: 17px;   
+}
+
+#inici h2
+{
+    margin:20px;
+    background: #FFF;
+    padding: 10px;
+    background: #232323;
+    color: #FFF;
+}
+
+#inici p
+{
+    margin: 5px 20px;
+    padding: 20px;
+    background: #FFF;
+    color: #000;
+}
+
+#ultimes_pelicules img
+{
+    width: 245px;
+}
+
+#ultimes_pelicules
+{
+    background: #EDECEE;
+    margin: 40px 20px 40px 20px;
+    padding:5px;
+}
+
+#ultimes_pelicules table
+{
+    border-spacing: 0;
+}
+
+#ultimes_pelicules td
+{
+    padding: 20px;    
+    border-spacing: none;
+}
+
+#ultimes_pelicules h3
+{
+    margin:20px;
+    background: #232323;
+    padding: 10px;
+    color: #FFF;
+}
+
+#ultimes_pelicules p
+{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+/* Pelicula
+----------------------------------------------------------------------------------------------*/
+
+#pelicula
+{
+    min-height:700px;
+}
+
+#pelicula, #comentaris, #nou_comentari
+{
+    background: #EDECEE;
+    margin: 40px 20px 40px 20px;
+    padding:20px;
+}
+
+#pelicula img 
+{
+    float:right;
+    width: 400px;
+    margin: 0 20px 20px 20px;
+}
+
+#pelicula ul
+{
+    list-style-type:none;
+    margin-left: -20px;
+}
+
+#pelicula h2    
+{
+    margin:20px;
+    background: #232323;
+    padding: 10px;
+    color: #FFF;
+}
+
+#pelicula h3
+{
+    font-weight:bold;
+    color: #D51007;
+}
+
+#boto_marcar, #boto_edicio, #boto_regEdicions
+{
+    background: #232323;
+    padding: 20px;
+    color: #FFF;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; /* CSS 3  */
+    text-align:center;
+}
+
+#boto_edicio
+{
+    float:left;
+    margin-left:20px;
+}
+
+#boto_regEdicions
+{
+    float:left;
+    margin-left:5px;
+}
+
+#boto_marcar
+{
+    float:right;
+    margin-right: 20px;
+}
+
+#boto_marcar p
+{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+/* Comentaris
+----------------------------------------------------------------------*/
+
+#comentaris h3, #nou_comentari h3   
+{
+    margin:20px;
+    background: #FFF;
+    padding: 10px;
+    background: #232323;
+    color: #FFF;
+}
+
+#comentaris
+{
+    padding-bottom: 50px;
+}
+
+.comentari 
+{
+    background: #FFF;
+    margin: -10px 20px;
+    padding: 0px 10px 20px 10px;
+    border-bottom: 1px #FFF solid;
+    color: #000;
+}
+
+.comentari img 
+{
+    float:left;
+}
+
+.comentari p 
+{
+    padding-left: 70px;
+}
+
+.comentari h4 
+{
+    padding: 5px;
+}
+
+#sense_comentaris
+{
+    background: #FFF;
+    margin: 20px;
+    padding: 10px;
+}
+
+#nou_comentari img
+{
+    margin-left: 20px;
+}
+
+#nou_comentari textarea
+{
+    width:730px;
+    margin-left: 10px;
+}
+
+#nou_comentari input
+{
+    float:right;
+    margin: 23px;
+}
+
+#nou_comentari
+{
+    padding-bottom: 70px;
+}
+
+/* Usuari
+------------------------------------------------------------------*/
+
+#dades_usuari 
+{
+    width: 360px;
+    float: left;
+    background: #EDECEE;
+    margin: 30px 20px 40px 20px;
+    padding:20px;
+}
+
+#dades_usuari h2
+{
+    margin:20px;
+    background: #FFF;
+    padding: 10px;
+    background: #232323;
+    color: #FFF;
+}
+
+#dades_usuari h3
+{
+    font-weight:bold;
+    color: #D51007;
+}
+
+#dades_usuari ul
+{
+    list-style-type: none;
+    margin-left: -20px;
+}
+
+#dades_usuari img
+{
+    float:right;
+    margin:20px;    
+}
+
+#dades_usuari input
+{
+    margin:20px;
+}
+
+#contactes
+{
+    width: 400px;
+    float: left;
+    background: #EDECEE;
+    margin: 30px 20px 40px 20px;
+    padding:20px;
+}
+
+#contactes h3
+{
+    margin:20px;
+    padding: 10px;
+    background: #232323;
+    color: #FFF;
+}
+
+#contactes td
+{
+    width: 120px;
+    height: 120px;
+    text-align: center;
+}
+
+#contactes table
+{
+    margin:20px;
+    background: #FFF;
+}
+
+#contactes h4
+{
+    margin-top: 0;
+}
+
+#pelicules_vistes_veure
+{
+    width: 100%;
+    color:#FFF;
+}
+
+#pelicules_vistes_veure h3
+{
+    margin:20px;
+    padding: 10px;
+    background: #FFF;
+    color: #232323;
+}
+
+#pelicules_vistes_veure img
+{
+    float:left;
+}
+
+#pelicules_vistes_veure ul
+{
+    list-style-type: none;   
+}
+
+#pelicules_vistes_veure li
+{
+    background: #EDECEE;
+    margin: 20px;
+    padding: 20px;
+    margin-left:-20px;
+    padding-bottom:110px;
+    color: #000;
+}
+
+#pelicules_vistes_veure a, #pelicules_vistes_veure span
+{
+    margin-left: 30px;
+}
+
+#pelicules_vistes
+{
+    width: 375px;
+    float: left;
+    border: 2px solid #000;
+    background: #232323;
+    margin: 30px 20px 5px 20px;
+    padding:20px;
+}
+
+#pelicules_veure
+{
+    width: 375px;
+    float: left;
+    border: 2px solid #000;
+    background: #232323;
+    margin: 30px 20px 5px 20px;
+    padding:20px;
+    
+}
+
+#pelicules_vistes_veure li
+{
+    border-bottom: 1px solid #232323;
+}
+
+/* Llista de pelicules
+-----------------------------------------------------------*/
+
+#llista_pelicules 
+{
+    background: #EDECEE;
+    margin: 30px 20px 40px 20px;
+    padding:20px;
+}
+
+#llista_pelicules h2
+{
+    margin:20px;
+    background: #FFF;
+    padding: 10px;
+    background: #232323;
+    color: #FFF;
+}
+
+#llista_pelicules ul
+{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+#llista_pelicules li
+{   
+    background: #FFF;
+    margin: 5px 20px;
+    padding: 20px;
+    background: #FFF;
+    color: #000;
+    height: 150px;
+}
+
+#llista_pelicules img
+{
+    float:left;
+}
+
+#llista_pelicules a, #llista_pelicules span
+{   
+     margin-left: 20px;
+}
+
+/* Llista gèneres
+-----------------------------------------------*/
+
+#llista_generes 
+{
+    background: #EDECEE;
+    margin: 30px 20px 40px 20px;
+    padding:20px;
+}
+
+#llista_generes h2
+{
+    margin:20px;
+    background: #FFF;
+    padding: 10px;
+    background: #232323;
+    color: #FFF;
+}
+
+#llista_generes ul
+{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+#llista_generes li
+{   
+    background: #FFF;
+    margin: 5px 20px;
+    padding: 20px;
+    background: #FFF;
+    color: #000;
+}
+
+/* Afegir pel·lícua
+------------------------------------------------------------------*/
+
+#pelicula_mode_creacio , #dades_usuari_mode_edicio, #pelicula_mode_edicio
+{
+    background: #EDECEE;
+    margin: 30px 20px 40px 20px;
+    padding:20px;
+}
+
+#pelicula_mode_creacio h2, #dades_usuari_mode_edicio h2, #pelicula_mode_edicio h2
+{
+    margin:20px;
+    background: #FFF;
+    padding: 10px;
+    background: #232323;
+    color: #FFF;
+}
+
+#pelicula_mode_creacio h3, #dades_usuari_mode_edicio h3, #pelicula_mode_edicio h3
+{
+    font-weight:bold;
+    color: #D51007;
+}
+
+#pelicula_mode_creacio ul, #dades_usuari_mode_edicio ul, #pelicula_mode_edicio ul
+{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+#pelicula_mode_creacio li, #dades_usuari_mode_edicio li, #pelicula_mode_edicio li
+{   
+    background: #FFF;
+    margin: 5px 20px;
+    padding: 20px;
+    background: #FFF;
+    color: #000;
+}
+
+.camps_afegir_pelicula, .camps_editar_usuari, .camps_editar_pelicula
+{
+    width:100%;
+}
+
+.btn_afegir_pelicula, .btn_editar_usuari, .btn_editar_pelicula
+{
+    margin:20px;
+}
+
+/* Quant a
+---------------------------------------------------*/
+
+#quanta
+{
+    background: #EDECEE;
+    margin: 20px;
+    padding:20px;
+}
+
+#quanta h2
+{
+    margin:20px;
+    background: #FFF;
+    padding: 10px;
+    background: #232323;
+    color: #FFF;
+}
+
+#quanta p
+{
+    margin:20px;
+}
